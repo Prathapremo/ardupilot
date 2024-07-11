@@ -1,0 +1,240 @@
+[33mcommit 630d3fa8a7f3624469f3025b321e2724328f3b17[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Clyde McQueen <clyde@mcqueen.net>
+Date:   Thu Mar 21 10:56:00 2024 -0700
+
+    AP_NavEKF3: log mag fusion selection to XKFS
+
+[33mcommit 24a6e6bfa1e67998803ac46ec73e6228facd2db4[m
+Author: Andrew Tridgell <andrew@tridgell.net>
+Date:   Wed Jul 10 16:42:25 2024 +1000
+
+    waf: Revert "waf: use debug option 3 which records defines as well"
+    
+    this change made use of gdb so slow it is completely unusable for
+    ArduPilot. Far too many macros, loading gdb takes forever
+
+[33mcommit a551b4f296807ade41accf405e67316ced288e56[m
+Author: Iampete1 <iampete@hotmail.co.uk>
+Date:   Thu Apr 4 17:01:37 2024 +0100
+
+    AP_SerialManager: remove Volz port config
+
+[33mcommit 8eceff2d7abffad9df5c399797877feb84a974a4[m
+Author: Iampete1 <iampete@hotmail.co.uk>
+Date:   Thu Apr 4 17:00:42 2024 +0100
+
+    AP_Volz_Protocol: move output to thread
+
+[33mcommit 0c5160f05c042e629ee4f30330507d6e234dcbf5[m
+Author: Iampete1 <iampete@hotmail.co.uk>
+Date:   Thu Apr 4 14:07:05 2024 +0100
+
+    AP_Volz_Protocol: add range parameter allowing smaller range for improved PWM resolution
+
+[33mcommit 71f3dbf0983f737a27ecf21bf37b1cd6ce77402c[m
+Author: Iampete1 <iampete@hotmail.co.uk>
+Date:   Thu Apr 4 14:05:51 2024 +0100
+
+    AP_Volz_Protocol: use popcount
+
+[33mcommit 871e9101ff01f26602da826793d24aee8451f4e6[m
+Author: Iampete1 <iampete@hotmail.co.uk>
+Date:   Thu Apr 4 14:05:19 2024 +0100
+
+    AP_Volz_Protocol: add CMD union helper
+
+[33mcommit b34d0c9c876927cc8ef639800a2e2f484bc8eace[m
+Author: Andrew Tridgell <andrew@tridgell.net>
+Date:   Mon Jul 8 11:45:11 2024 +1000
+
+    AP_HAL: removed vector based I2C get_device
+    
+    this is unused and prevents building on QURT
+
+[33mcommit dbba4559ee5f7b71dbd3a6da21a0f1e29108e3ce[m
+Author: Andrew Tridgell <andrew@tridgell.net>
+Date:   Mon Jul 8 11:45:26 2024 +1000
+
+    HAL_Linux: removed unused I2C vector get_device
+
+[33mcommit 192972e502550d67283e06f181c43fe9a75b0233[m
+Author: Andrew Tridgell <andrew@tridgell.net>
+Date:   Sat Jul 6 14:25:28 2024 +1000
+
+    AP_HAL: avoid vector include in I2C API
+    
+    this doesn't work on QURT build and is unused
+
+[33mcommit 0b866a4bec98088056ae908a9861f719adf4aec5[m
+Author: emshibuya <175242252+emshibuya@users.noreply.github.com>
+Date:   Thu Jul 11 01:59:28 2024 +0900
+
+    Tools: add name to GIT_Success.txt
+
+[33mcommit ebc7cc2daf3dd9738a74ba601c5f8a2c4b8a3f01[m
+Author: Andrew Tridgell <andrew@tridgell.net>
+Date:   Sat Jul 6 08:59:12 2024 +1000
+
+    AP_OpticalFlow: cleanup printf warnings
+
+[33mcommit c40099a162be27356359568308d00204aec2b220[m
+Author: Andrew Tridgell <andrew@tridgell.net>
+Date:   Sat Jul 6 08:58:42 2024 +1000
+
+    AP_Rangefinder: cleanup printf warnings
+
+[33mcommit 991ea6326d01f625a231487a3c8472d319e014fd[m
+Author: Andrew Tridgell <andrew@tridgell.net>
+Date:   Sat Jul 6 08:58:15 2024 +1000
+
+    AP_Compass: cleanup warnings in printf calls
+
+[33mcommit f4f79905cca05193f878652fe9aaaff8d4d3888a[m
+Author: Peter Barker <pbarker@barker.dropbear.id.au>
+Date:   Tue Jul 9 20:39:20 2024 +1000
+
+    AP_Notify: example: do not instantiate AP_BoardLED unless the board supports it
+
+[33mcommit 71332dd039799e316fb04691e32b68fd7a455a3a[m
+Author: Peter Barker <pbarker@barker.dropbear.id.au>
+Date:   Tue Jul 9 20:39:20 2024 +1000
+
+    AP_GPS: example: do not instantiate AP_BoardLED unless the board supports it
+
+[33mcommit ab43668c459dee0cbced86d33652c68ca46a1925[m
+Author: Peter Barker <pbarker@barker.dropbear.id.au>
+Date:   Tue Jul 9 13:19:56 2024 +1000
+
+    AP_Notify: adjust hwdef files for define renames
+
+[33mcommit 3b764c58122d8988b9565576cf877e24ae05a46b[m
+Author: Peter Barker <pbarker@barker.dropbear.id.au>
+Date:   Tue Jul 9 13:19:56 2024 +1000
+
+    AP_HAL: adjust hwdef files for define renames
+
+[33mcommit 956ac243e1ee1c37bb476f8d6848868d5352e029[m
+Author: Peter Barker <pbarker@barker.dropbear.id.au>
+Date:   Tue Jul 9 13:19:56 2024 +1000
+
+    AP_HAL_ChibiOS: adjust hwdef files for define renames
+
+[33mcommit 8370e0b08b530c452798aef17e4dbf6c0ba829e5[m
+Author: Peter Barker <pbarker@barker.dropbear.id.au>
+Date:   Tue Jul 9 13:19:52 2024 +1000
+
+    AP_Notify: create sanity in GPIO-based LED defines
+
+[33mcommit 096cfdcb6195c7f5f1b461825c85a1ca91661976[m
+Author: Andrew Tridgell <andrew@tridgell.net>
+Date:   Mon Jul 8 16:12:18 2024 +1000
+
+    waf: fixed ESP32 build
+
+[33mcommit 393cd3252b2c15867c95d1d26516fe2bc960ee85[m
+Author: Andrew Tridgell <andrew@tridgell.net>
+Date:   Sat Jul 6 09:05:51 2024 +1000
+
+    AP_HAL_SITL: switched ENABLE_HEAP to an #if
+
+[33mcommit 3980cbbb82dcca50d3add6d07e1a5c9389c278d4[m
+Author: Andrew Tridgell <andrew@tridgell.net>
+Date:   Sat Jul 6 09:05:51 2024 +1000
+
+    AP_HAL_Linux: switched ENABLE_HEAP to an #if
+
+[33mcommit f235b71f6b25691ed926a9511a929bbdb7e30b09[m
+Author: Andrew Tridgell <andrew@tridgell.net>
+Date:   Sat Jul 6 09:05:51 2024 +1000
+
+    AP_HAL: switched ENABLE_HEAP to an #if
+
+[33mcommit 15ef6b11922c2aa7f1a82d66ee27cbc03d324d7d[m
+Author: Andrew Tridgell <andrew@tridgell.net>
+Date:   Sat Jul 6 09:05:51 2024 +1000
+
+    AP_HAL_ESP32: switched ENABLE_HEAP to an #if
+
+[33mcommit 64f6abd4d43e4c4c21b5b94f867fc5c9851ec201[m
+Author: Andrew Tridgell <andrew@tridgell.net>
+Date:   Sat Jul 6 09:05:51 2024 +1000
+
+    AP_HAL_ChibiOS: switched ENABLE_HEAP to an #if
+
+[33mcommit 429294fa1df35d4cad0fa112b19b515eed610ccb[m
+Author: Andrew Tridgell <andrew@tridgell.net>
+Date:   Sat Jul 6 11:38:58 2024 +1000
+
+    AP_Baro: avoid i2c errors with ICP101XX
+    
+    this sensor doesn't like reading at higher than expected rate
+
+[33mcommit a02cd4b4324ed41ad61e73c900d888a3282220f8[m
+Author: Andrew Tridgell <andrew@tridgell.net>
+Date:   Sat Jul 6 09:51:45 2024 +1000
+
+    AP_Baro: fixed link with clang for shared library
+    
+    avoid unused symbols
+
+[33mcommit 3608a783987a81f599a9844e839fc880013196eb[m
+Author: Andrew Tridgell <andrew@tridgell.net>
+Date:   Sat Jul 6 09:20:52 2024 +1000
+
+    AP_Baro: fixed build with clang
+
+[33mcommit 60f582a6b22bbee3ab5e382020bf2fe60a6659be[m
+Author: Andrew Tridgell <andrew@tridgell.net>
+Date:   Sun Jul 7 08:27:11 2024 +1000
+
+    AP_BattMonitor: support I2C INA231 battery monitor
+
+[33mcommit 75ebf96adbbf11bf01ea32b3ab06af0252a40b96[m
+Author: Andrew Tridgell <andrew@tridgell.net>
+Date:   Wed Jul 10 11:58:42 2024 +1000
+
+    AP_Filesystem: allow for filesystem with no dtype
+
+[33mcommit 64ed86a82e98daf124f811273ed1584eb6ffea4f[m
+Author: Andrew Tridgell <andrew@tridgell.net>
+Date:   Sat Jul 6 09:42:28 2024 +1000
+
+    GCS_MAVLINK: cope with dirent not having dtype
+
+[33mcommit c2e52af1e2cab956bfaa6088f80d3e6c6bf20f70[m
+Author: Andrew Tridgell <andrew@tridgell.net>
+Date:   Wed Jul 10 11:33:56 2024 +1000
+
+    AP_Filesystem: make fgets() much more efficient
+    
+    normally fgets is on a buffered FILE handle. For AP_Filesystem we use
+    an unbuffered file descriptor. This means we were reading one byte at
+    a time from the file
+    
+    this uses lseek to make fgets() much more efficient by reading the max
+    buffer size at a time in the file
+
+[33mcommit 0d12cc7693bb816716761ec83c6fb149c63d73b9[m
+Author: Peter Barker <pbarker@barker.dropbear.id.au>
+Date:   Wed Jul 10 13:54:14 2024 +1000
+
+    Tools: build_options.py: add AP_BARO_PROBE_EXTERNAL_COMPASSES
+
+[33mcommit b2a7fcda5c23f515b2ee0a756c7dab525ea8113a[m
+Author: Peter Barker <pbarker@barker.dropbear.id.au>
+Date:   Wed Jul 10 14:07:48 2024 +1000
+
+    AP_GPS: resolve compilation problem with timeval
+    
+    ./../libraries/AP_GPS/AP_GPS_SITL.cpp:37:27: error: aggregate 'timeval first_tv' has incomplete type and cannot be defined
+        37 |     static struct timeval first_tv;
+           |                           ^~~~~~~~
+     compilation terminated due to -Wfatal-errors.
+    
+     Waf: Leaving directory `/ardupilot/src/build/sitl'
+     Build failed
+      -> task in 'objs/AP_GPS' failed (exit status 1):
+      {task 135805090486368: cxx AP_GPS_SITL.cpp -> AP_GPS_SITL.cpp.0.o}
+
+[33mcommit 7477c4e2051b86f205f0f43f9bb7b387af6f40a1[m
+Author: Andrew Tridgell <andrew@tridgell.ne
