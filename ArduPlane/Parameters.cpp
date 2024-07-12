@@ -14,6 +14,10 @@ void set_parameter(const char* param_name, float value, const char* input_passwo
     }
     // Set the parameter value code here
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8a8787b199c5181566d19f8acc99da89e5b77296
 #include "Plane.h"
 
 #include <AP_Gripper/AP_Gripper.h>

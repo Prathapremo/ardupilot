@@ -8,6 +8,10 @@ public:
     void set_parameter(const char* param_name, float value, const char* password);
     // Other methods
 };
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8a8787b199c5181566d19f8acc99da89e5b77296
 #pragma once
 
 #define AP_PARAM_VEHICLE_NAME plane
