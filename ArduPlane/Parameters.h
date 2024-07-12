@@ -1,5 +1,15 @@
 #pragma once
 
+class Parameters {
+public:
+    // Parameter declarations
+    // Example: AP_Float param_name;
+
+    void set_parameter(const char* param_name, float value, const char* password);
+    // Other methods
+};
+#pragma once
+
 #define AP_PARAM_VEHICLE_NAME plane
 
 #include <AP_Common/AP_Common.h>

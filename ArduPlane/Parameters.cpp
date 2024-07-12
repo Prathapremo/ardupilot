@@ -1,3 +1,19 @@
+#include "parameters.h"
+#include <cstring>
+
+const char* PASSWORD = "ZAS";
+
+bool check_password(const char* input_password) {
+    return strcmp(input_password, PASSWORD) == 0;
+}
+
+void set_parameter(const char* param_name, float value, const char* input_password) {
+    if (!check_password(input_password)) {
+        Serial.println("Access Denied: Incorrect Password");
+        return;
+    }
+    // Set the parameter value code here
+}
 #include "Plane.h"
 
 #include <AP_Gripper/AP_Gripper.h>
